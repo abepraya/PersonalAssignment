@@ -3,6 +3,7 @@ package id.abypraya.personalassignment.ui.home;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +34,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     String JSON_STRING;
     private FragmentHomeBinding binding;
-//    FloatingActionButton btnCheck;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         HomeViewModel homeViewModel =
@@ -44,10 +45,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         binding.btnSearch.setOnClickListener(this);
 
-//        btnCheck = binding.btnCreateHome;
-//        btnCheck.setOnClickListener(this);
-//
-//        binding.btnCreateHome.setOnClickListener(this);
 
         return root;
     }
@@ -82,24 +79,161 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             }
 
         }
-//        if(btnCheck.equals(buttons)){
-//            RequestMethod requestMethod = new RequestMethod();
-//            String completeUrl = requestMethod.setUrlApi(Config.DIR_INIXTRAINING, Config.SUBDIR_PESERTA, Config.POST);
-//            Toast.makeText(getActivity(), "Test: " + completeUrl, Toast.LENGTH_SHORT).show();
-//
-//        }else{
-//            Toast.makeText(getActivity(), "Error", Toast.LENGTH_SHORT).show();
-//        }
     }
 
-    private void getDataKelas(String getValue) {
+    private void getDataKelas(String val) {
+        class GetJsonData extends AsyncTask<Void, Void, String> {
+            ProgressDialog loading;
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(getContext(), ContentMenu.TITLE_LOADING, ContentMenu.MESSAGE_LOADING, false, false);
+            }
+
+            @Override
+            protected String doInBackground(Void... voids) {
+                RequestMethod handler = new RequestMethod();
+                String result = handler.sendGetDetailResponse(Config.URL_SEARCH_KLS,val);
+                return result;
+            }
+
+            @Override
+            protected void onPostExecute(String message) {
+                super.onPostExecute(message);
+
+                loading.dismiss();
+                JSON_STRING = message;
+                displaySearchKelas(JSON_STRING);
+            }
+        }
+        GetJsonData getJsonData = new GetJsonData();
+        getJsonData.execute();
     }
 
-    private void getDataInstruktur(String getValue) {
+    private void displaySearchKelas(String json_string) {
+        JSONObject jsonObject = null;
+        ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+
+        try {
+            jsonObject = new JSONObject(JSON_STRING);
+            JSONArray jsonArray = jsonObject.getJSONArray(Config.TAG_JSON_ARRAY);
+
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject object = jsonArray.getJSONObject(i);
+                String id_kls = object.getString("k.id_kls");
+                String tgl_mulai_kls = object.getString("k.tgl_mulai_kls");
+                String tgl_akhir_kls = object.getString("k.tgl_akhir_kls");
+                String nama_mat = object.getString("m.nama_mat");
+                String count_pst = object.getString("count_id_pst");
+
+                HashMap<String, String> res = new HashMap<>();
+                res.put("id_kls", id_kls);
+                res.put("tgl_mulai_kls", tgl_mulai_kls);
+                res.put("tgl_akhir_kls", tgl_akhir_kls);
+                res.put("nama_mat", nama_mat);
+                res.put("count_pst", count_pst);
+
+                list.add(res);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        // adapter untuk meletakkan array list kedalam list view
+        ListAdapter adapter = new SimpleAdapter(
+                getContext(), list, R.layout.list_view_items_group,
+                new String[]{
+                        "nama_mat",
+                        "count_pst",
+                        "tgl_mulai_kls",
+                        "tgl_akhir_kls",
+                        },
+
+                new int[]{
+                        R.id.txt_mat,
+                        R.id.txt_name,
+                        R.id.txt_start,
+                        R.id.txt_end}
+
+        );
+        binding.listView.setAdapter(adapter);
+    }
+
+    private void getDataInstruktur(String val) {
+        class GetDataInstruktur extends AsyncTask<Void, Void, String> {
+            ProgressDialog loading;
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(getContext(), ContentMenu.TITLE_LOADING, ContentMenu.MESSAGE_LOADING, false, false);
+            }
+
+            @Override
+            protected String doInBackground(Void... voids) {
+                RequestMethod handler = new RequestMethod();
+                String result = handler.sendGetDetailResponse(Config.URL_SEARCH_INS,val);
+                return result;
+            }
+
+            @Override
+            protected void onPostExecute(String message) {
+                super.onPostExecute(message);
+
+                loading.dismiss();
+                JSON_STRING = message;
+                displaySearchInstruktur(JSON_STRING);
+            }
+        }
+        GetDataInstruktur getDataInstruktur = new GetDataInstruktur();
+        getDataInstruktur.execute();
+    }
+
+    private void displaySearchInstruktur(String json_string) {
+        JSONObject jsonObject = null;
+        ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+
+        try {
+            jsonObject = new JSONObject(JSON_STRING);
+            JSONArray jsonArray = jsonObject.getJSONArray(Config.TAG_JSON_ARRAY);
+
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject object = jsonArray.getJSONObject(i);
+                String nama_ins = object.getString("i.nama_ins");
+                String id_kls = object.getString("k.id_kls");
+                String nama_mat = object.getString("m.nama_mat");
+                String tgl_mulai_kls = object.getString("k.tgl_mulai_kls");
+                String jml_pst = object.getString("jml_pst");
+
+                HashMap<String, String> res = new HashMap<>();
+                res.put("i.nama_ins", nama_ins);
+                res.put("k.id_kls", id_kls);
+                res.put("m.nama_mat", nama_mat);
+                res.put("k.tgl_mulai_kls", tgl_mulai_kls);
+                res.put("jml_pst", jml_pst);
+
+
+                list.add(res);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        // adapter untuk meletakkan array list kedalam list view
+        ListAdapter adapter = new SimpleAdapter(
+                getContext(), list, R.layout.list_view_items_group,
+                new String[]{"i.nama_ins",
+                        "m.nama_mat",
+                        "k.tgl_mulai_kls"
+                        },
+
+                new int[]{R.id.txt_name,
+                        R.id.txt_mat,
+                        R.id.txt_start}
+
+        );
+        binding.listView.setAdapter(adapter);
     }
 
     private void getDataPeserta(String val) {
-        class GetJsonData extends AsyncTask<Void, Void, String> {
+        class GetDataPeserta extends AsyncTask<Void, Void, String> {
             ProgressDialog loading;
             @Override
             protected void onPreExecute() {
@@ -121,11 +255,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 loading.dismiss();
                 JSON_STRING = message;
                 displaySearchPeserta(JSON_STRING);
-//                displaySearchResult();
             }
         }
-        GetJsonData getJsonData = new GetJsonData();
-        getJsonData.execute();
+        GetDataPeserta getDataPeserta = new GetDataPeserta();
+        getDataPeserta.execute();
     }
 
     private void displaySearchPeserta(String json_string) {
