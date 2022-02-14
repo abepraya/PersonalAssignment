@@ -41,7 +41,7 @@
 
 
     <string-array name="search_query">
-        <item></item>
+        <item>- Select Category -</item>
         <item>1 Information peserta - id_pst</item>
         <item>2 Information instruktur - id_ins</item>
         <item>3 Information kelas - id_kls</item>
