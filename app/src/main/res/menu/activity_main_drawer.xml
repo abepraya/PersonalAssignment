@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_kelas"
+            android:icon="@drawable/ic_class"
+            android:title="@string/menu_kelas" />
+        <item
+            android:id="@+id/nav_instruktur"
+            android:icon="@drawable/ic_instructor"
+            android:title="@string/menu_instruktur" />
+        <item
+            android:id="@+id/nav_materi"
+            android:icon="@drawable/ic_subject"
+            android:title="@string/menu_materi" />
+        <item
+            android:id="@+id/nav_peserta"
+            android:icon="@drawable/ic_people"
+            android:title="@string/menu_peserta" />
+        <item
+            android:id="@+id/nav_instansi"
+            android:icon="@drawable/ic_instansi"
+            android:title="@string/menu_instansi" />
+    </group>
+</menu>

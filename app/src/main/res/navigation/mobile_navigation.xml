@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="id.abypraya.personalassignment.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_kelas"
+        android:name="id.abypraya.personalassignment.ui.kelas.KelasFragment"
+        android:label="@string/menu_kelas"
+        tools:layout="@layout/fragment_kelas" />
+
+    <fragment
+        android:id="@+id/nav_peserta"
+        android:name="id.abypraya.personalassignment.ui.peserta.PesertaFragment"
+        android:label="@string/menu_peserta"
+        tools:layout="@layout/fragment_peserta" />
+
+    <fragment
+        android:id="@+id/nav_instruktur"
+        android:name="id.abypraya.personalassignment.ui.instruktur.InstrukturFragment"
+        android:label="@string/menu_instruktur"
+        tools:layout="@layout/fragment_instruktur" />
+
+    <fragment
+        android:id="@+id/nav_materi"
+        android:name="id.abypraya.personalassignment.ui.materi.MateriFragment"
+        android:label="@string/menu_materi"
+        tools:layout="@layout/fragment_materi" />
+
+    <fragment
+        android:id="@+id/nav_instansi"
+        android:name="id.abypraya.personalassignment.ui.instansi.InstansiFragment"
+        android:label="@string/menu_instansi"
+        tools:layout="@layout/fragment_instansi" />
+</navigation>

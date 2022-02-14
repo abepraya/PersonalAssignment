@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/drawable/custom_button.xml" value="0.196" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/drawable/custom_dialog_background.xml" value="0.1915" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/drawable/side_nav_bar.xml" value="0.196" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_add_instansi.xml" value="0.1574074074074074" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_add_instruktur.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_add_kelas.xml" value="0.33055555555555555" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_add_materi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_add_peserta.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_add_sub_detail_kelas.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_detail_instansi.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_detail_instruktur.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_detail_kelas.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_detail_materi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_detail_peserta.xml" value="0.26851851851851855" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_info_sub_detail_kelas.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_sub_detail_kelas.xml" value="0.1287037037037037" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/activity_sub_sub_detail_kelas.xml" value="0.1287037037037037" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/add_materi_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/app_bar_main.xml" value="0.31296296296296294" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/content_main.xml" value="0.264" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/custom_dialog.xml" value="0.4459770114942529" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_add_materi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_gallery.xml" value="0.3368421052631579" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_instansi.xml" value="0.1574074074074074" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_instruktur.xml" value="0.30185185185185187" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_kelas.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_materi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_peserta.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_second_add_materi.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/fragment_slideshow.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/instansi_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/list_view_data.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/list_view_items_data.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/list_view_items_data_alternative.xml" value="0.1287037037037037" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/list_view_items_group.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/layout/nav_header_main.xml" value="0.3296875" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/menu/main.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/android-maybank/PersonalAssignment/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23" />
+        <entry key="..\:/Users/USER/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.16574074074074074" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

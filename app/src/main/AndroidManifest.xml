@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.abypraya.personalassignment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PersonalAssignment"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.kelas.integration.SubDetailKelas.InfoSubDetailKelasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kelas.integration.SubDetailKelas.SubSubDetailKelasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kelas.integration.SubDetailKelas.AddSubDetailKelasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kelas.integration.SubDetailKelas.SubDetailKelasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kelas.integration.DetailKelasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.peserta.integration.DetailPesertaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.instruktur.integration.DetailInstrukturActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.materi.integration.DetailMateriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.instansi.integration.DetailInstansiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kelas.integration.AddKelasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.peserta.integration.AddPesertaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.instansi.integration.AddInstansiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.instruktur.integration.AddInstrukturActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.materi.integration.AddMateriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PersonalAssignment.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

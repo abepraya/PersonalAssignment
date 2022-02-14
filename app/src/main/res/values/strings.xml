@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">PersonalAssignment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Aby Praya</string>
+    <string name="nav_header_subtitle">abypraya@email.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="query_placeholder">Find ID Peserta/Instruktur/Kelas</string>
+    <string name="category">Category</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_kelas">Kelas</string>
+    <string name="menu_instruktur">Instruktur</string>
+    <string name="menu_materi">Materi</string>
+    <string name="menu_instansi">Instansi</string>
+    <string name="menu_peserta">Peserta</string>
+
+    <string name="btn_save_data">Save</string>
+    <string name="btn_update_data">Update</string>
+    <string name="btn_delete_data">Delete</string>
+    <string name="btn_search_data">Search</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_phone">Phone Number</string>
+    <string name="txt_address">Address</string>
+
+    <string name="invalid_name">Invalid name</string>
+    <string name="invalid_phone_number">Invalid phone number</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_address">Invalid address</string>
+    <string name="invalid_instansi">Invalid Instansi</string>
+    <string name="invalid_materi">Invalid Materi</string>
+    <string name="invalid_instruktur">Invalid Instruktur</string>
+    <string name="invalid_date">Invalid Date</string>
+    <string name="invalid_kelas">Invalid Kelas</string>
+    <string name="invalid_peserta">Invalid Peserta</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string-array name="search_query">
+        <item></item>
+        <item>1 Information peserta - id_pst</item>
+        <item>2 Information instruktur - id_ins</item>
+        <item>3 Information kelas - id_kls</item>
+    </string-array>
+</resources>
