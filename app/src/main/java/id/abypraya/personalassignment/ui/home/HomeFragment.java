@@ -82,7 +82,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     }
 
     private void getDataKelas(String val) {
-        class GetJsonData extends AsyncTask<Void, Void, String> {
+        class GetDataKelas extends AsyncTask<Void, Void, String> {
             ProgressDialog loading;
             @Override
             protected void onPreExecute() {
@@ -106,8 +106,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 displaySearchKelas(JSON_STRING);
             }
         }
-        GetJsonData getJsonData = new GetJsonData();
-        getJsonData.execute();
+        GetDataKelas getDataKelas = new GetDataKelas();
+        getDataKelas.execute();
     }
 
     private void displaySearchKelas(String json_string) {
